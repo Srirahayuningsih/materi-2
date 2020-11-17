@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
-     <center><marquee bgcolor="forestgreen" style="color:white;" direction="up" scrollamount="2" align="center" behavior="alternate" width="90%"><marquee direction="right"> New Product Collection</marquee></marquee></center>
+     <center><marquee bgcolor="forestgreen" style="color:white;" direction="up" scrollamount="2" align="center" behavior="alternate" width="90%"><marquee direction="right"> New Product Collection </marquee></marquee></center>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="{{ url ('public') }} /vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->

@@ -52,3 +52,23 @@ Route::get('/home', function() {
 Route::get('/detail', function() {
 	return view("detail");
 });
+
+Route::get('/template', function() {
+	return view("template.base");
+});
+
+Route::get('/beranda', function() {
+	return view("beranda");
+});
+
+Route::get('/produk', function() {
+	return view("produk");
+});
+
+Route::get('/kategori', function() {
+	return view("kategori");
+});
+
+Route::get('/login', function() {
+	return view("login");
+});

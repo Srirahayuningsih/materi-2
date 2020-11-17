@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>ObajuYak</title>
+    <title>0baju Yak</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
-     <center><marquee bgcolor="forestgreen" style="color:white;" direction="up" scrollamount="2" align="center" behavior="alternate" width="90%"><marquee direction="right">New Product Collection</marquee></marquee></center>
+    <center><marquee bgcolor="green" style="color:white;" direction="up" scrollamount="2" align="center" behavior="alternate" width="90%"><marquee direction="right"> New Product Collection</marquee></marquee></center>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="{{ url ('public') }} /vendor/bootstrap/css/bootstrap.min.css">
     <!-- Font Awesome CSS-->
@@ -42,16 +42,41 @@
               <ul class="menu list-inline mb-0">
                 <li class="list-inline-item"><a href="home">Home</a></li>
                 <li class="list-inline-item"><a href="about">About</a></li>
-                <li class="list-inline-item"><a href="detail">Detail</a></li>
+                 <li class="list-inline-item"><a href="detail">Detail</a></li>
                 <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li>
                 <li class="list-inline-item"><a href="register">Register</a></li>
-                <li class="list-inline-item"><a href="contact">Contact</a></li>
-                
+                <li class="list-inline-item"><a href="contact">Contact</a></li></li>
               </ul>
             </div>
           </div>
         </div>
-       
+        <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true" class="modal fade">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Customer login</h5>
+                <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+              </div>
+              <div class="modal-body">
+                <form action="customer-orders.html" method="post">
+                  <div class="form-group">
+                    <input id="email-modal" type="text" placeholder="email" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <input id="password-modal" type="password" placeholder="password" class="form-control">
+                  </div>
+                  <p class="text-center">
+                    <button class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                  </p>
+                </form>
+                <p class="text-center text-muted">Not registered yet?</p>
+                <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1 minute and gives you access to special discounts and much more!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- *** TOP BAR END ***-->
+        
         
       </div>
       <nav class="navbar navbar-expand-lg">
@@ -60,13 +85,11 @@
             <button type="button" data-toggle="collapse" data-target="#navigation" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle navigation</span><i class="fa fa-align-justify"></i></button>
             <button type="button" data-toggle="collapse" data-target="#search" class="btn btn-outline-secondary navbar-toggler"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></button><a href="basket.html" class="btn btn-outline-secondary navbar-toggler"><i class="fa fa-shopping-cart"></i></a>
           </div>
-        
-             <div class="navbar-buttons d-flex justify-content-end">
-              <!-- /.nav-collapse-->
-              <div id="search-not-mobile" class="navbar-collapse collapse"></div><a data-toggle="collapse" href="#search" class="btn navbar-btn btn-primary d-none d-lg-inline-block"><span class="sr-only">Toggle search</span><i class="fa fa-search"></i></a>
+          
               
-          </div>    
-           
+          </div>
+        </div>
+      </nav>
       <div id="search" class="collapse">
         <div class="container">
           <form role="search" class="ml-auto">
@@ -86,14 +109,7 @@
           <div class="row">
             <div class="col-lg-12">
               <!-- breadcrumb-->
-              <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Home</a></li>
-                  <li class="breadcrumb-item"><a href="#">Ladies</a></li>
-                  <li class="breadcrumb-item"><a href="#">Tops</a></li>
-                  <li aria-current="page" class="breadcrumb-item active">White Blouse Armani</li>
-                </ol>
-              </nav>
+              
             </div>
             <div class="col-lg-3 order-2 order-lg-1">
               <!--
@@ -108,21 +124,26 @@
                   <ul class="nav nav-pills flex-column category-menu">
                     <li><a href="category.html" class="nav-link">Men <span class="badge badge-secondary">42</span></a>
                       <ul class="list-unstyled">
-                        <li><a href="category" class="nav-link">T-shirts</a></li>
-                        <li><a href="category" class="nav-link">Shirts</a></li>
-                        <li><a href="category" class="nav-link">Pants</a></li>
-                        <li><a href="category" class="nav-link">Accessories</a></li>
+                        <li><a href="category.html" class="nav-link">T-shirts</a></li>
+                        <li><a href="category.html" class="nav-link">Shirts</a></li>
+                        <li><a href="category.html" class="nav-link">Pants</a></li>
+                        <li><a href="category.html" class="nav-link">Accessories</a></li>
                       </ul>
                     </li>
                     <li><a href="category.html" class="nav-link active">Ladies  <span class="badge badge-light">123</span></a>
                       <ul class="list-unstyled">
-                        <li><a href="category" class="nav-link">T-shirts</a></li>
-                        <li><a href="category" class="nav-link">Skirts</a></li>
-                        <li><a href="category" class="nav-link">Pants</a></li>
-                        <li><a href="category" class="nav-link">Accessories</a></
-                        <li><a href="category" class="nav-link">Skirts</a></li>
-                        <li><a href="category" class="nav-link">Pants</a></li>
-                        <li><a href="category" class="nav-link">Accessories</a></li>
+                        <li><a href="category.html" class="nav-link">T-shirts</a></li>
+                        <li><a href="category.html" class="nav-link">Skirts</a></li>
+                        <li><a href="category.html" class="nav-link">Pants</a></li>
+                        <li><a href="category.html" class="nav-link">Accessories</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="category.html" class="nav-link">Kids  <span class="badge badge-secondary">11</span></a>
+                      <ul class="list-unstyled">
+                        <li><a href="category.html" class="nav-link">T-shirts</a></li>
+                        <li><a href="category.html" class="nav-link">Skirts</a></li>
+                        <li><a href="category.html" class="nav-link">Pants</a></li>
+                        <li><a href="category.html" class="nav-link">Accessories</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -198,15 +219,15 @@
                 </div>
               </div>
               <!-- *** MENUS AND FILTERS END ***-->
-              <div class="banner"><a href="#"><img src="{{ url ('public') }} /img/banner.jpg" alt="sales 2020" class="img-fluid"></a></div>
+              <div class="banner"><a href="#"><img src="{{ url ('public') }} /img/banner.jpg" alt="sales 2014" class="img-fluid"></a></div>
             </div>
             <div class="col-lg-9 order-1 order-lg-2">
               <div id="productMain" class="row">
                 <div class="col-md-6">
                   <div data-slider-id="1" class="owl-carousel shop-detail-carousel">
-                    <div class="item"> <img src="{{ url ('public') }} /img/detailbig1.jpg" alt="" class="{{ url ('public') }} /img-fluid"></div>
-                    <div class="item"> <img src="{{ url ('public') }} /img/detailbig2.jpg" alt="" class="{{ url ('public') }} /img-fluid"></div>
-                    <div class="item"> <img src="{{ url ('public') }} /img/detailbig3.jpg" alt="" class="{{ url ('public') }} /img-fluid"></div>
+                    <div class="item"> <img src="{{ url ('public') }} /img/detailbig1.jpg" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="{{ url ('public') }} /img/detailbig2.jpg" alt="" class="img-fluid"></div>
+                    <div class="item"> <img src="{{ url ('public') }} /img/detailbig3.jpg" alt="" class="img-fluid"></div>
                   </div>
                   <div class="ribbon sale">
                     <div class="theribbon">SALE</div>
@@ -224,12 +245,12 @@
                     <h1 class="text-center">White Blouse Armani</h1>
                     <p class="goToDescription"><a href="#details" class="scroll-to">Scroll to product details, material &amp; care and sizing</a></p>
                     <p class="price">Rp.124.000</p>
-                    <p class="text-center buttons"><a href="basket" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a><a href="basket" class="btn btn-outline-primary"><i class="fa fa-heart"></i> Add to wishlist</a></p>
+                    <p class="text-center buttons"><a href="basket.html" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to cart</a><a href="basket.html" class="btn btn-outline-primary"><i class="fa fa-heart"></i> Add to wishlist</a></p>
                   </div>
                   <div data-slider-id="1" class="owl-thumbs">
-                    <button class="owl-thumb-item"><img src="{{ url ('public') }} /img/detailsquare.jpg" alt="" class="{{ url ('public') }} /img-fluid"></button>
-                    <button class="owl-thumb-item"><img src="{{ url ('public') }} /img/detailsquare2.jpg" alt="" class="{{ url ('public') }} /img-fluid"></button>
-                    <button class="owl-thumb-item"><img src="{{ url ('public') }} /img/detailsquare3.jpg" alt="" class="{{ url ('public') }} /img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="img/detailsquare.jpg" alt="" class="{{ url ('public') }} /img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="img/detailsquare2.jpg" alt="" class="{{ url ('public') }} /img-fluid"></button>
+                    <button class="owl-thumb-item"><img src="img/detailsquare3.jpg" alt="" class="{{ url ('public') }} /img-fluid"></button>
                   </div>
                 </div>
               </div>
@@ -257,14 +278,15 @@
                 </div>
               </div>
               
-                
-                
+                  <!-- /.product-->
+                </div>
+              </div>
+            </div>
             <!-- /.col-md-9-->
           </div>
         </div>
       </div>
     </div>
-                    
     <!--
     *** FOOTER ***
     _________________________________________________________
@@ -305,10 +327,7 @@
           <div class="col-lg-6 mb-2 mb-lg-0">
             <p class="text-center text-lg-right">©2020 Sri Rahayu Ningsih.</p>
           </div>
-          <div class="col-lg-6">
-            
-            </p>
-          </div>
+          
         </div>
       </div>
     </div>
